@@ -67,7 +67,8 @@ class ParseCSV
     line_array.each_with_index { |col, index|
       if index >= @max_vals.length; return @max_vals; end
 
-      if !(col.nil?) && col.is_number?; col = to_numeric(col)
+      if !(col.nil?) && col.is_number?
+        col = to_numeric(col)
         if @max_vals[index].nil?
           @max_vals[index] = col
         elsif col > to_numeric(@max_vals[index])
