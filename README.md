@@ -9,5 +9,7 @@ Usage: ruby parse_csv <input_file>
 
 parse_csv_verbose.rb
 Usage: ruby parse_csv_verbose.rb <input_file> > <output_file>
+
 ********It is recommended to pipe this ">" to an output text file
+
 OR use ./test_ruby.sh <input_file>
